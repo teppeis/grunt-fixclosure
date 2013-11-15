@@ -1,4 +1,4 @@
-# grunt-fixclosure
+# grunt-fixclosure [![Build Status](https://travis-ci.org/teppeis/grunt-fixclosure.png?branch=master)](https://travis-ci.org/teppeis/grunt-fixclosure)
 
 > The best plugin ever.
 
