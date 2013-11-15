@@ -1,0 +1,18 @@
+Running "fixclosure:test" (fixclosure) task
+File: ../fixtures/ng.js
+
+Provided:
+- goog.dom
+
+Required:
+- goog.dom.DomHelper
+
+Missing Require:
+- goog.math.Size
+
+FAIL!
+
+1 of 1 files failed
+Warning: fixclosure failed. Use --force to continue.
+
+Aborted due to warnings.
