@@ -30,12 +30,13 @@
     "grunt-mocha-test": "~0.7.0",
     "load-grunt-tasks": "~0.2.0",
     "grunt-contrib-watch": "~0.5.3",
-    "cpr": "~0.1.1"
+    "cpr": "~0.1.1",
+    "grunt-cli": "~0.1.11"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "node_modules/grunt-cli/bin/grunt"
   },
   "dependencies": {
-    "fixclosure": "~0.2.0"
+    "fixclosure": "0.3.0-alpha.1"
   }
 }
