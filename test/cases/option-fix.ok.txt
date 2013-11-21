@@ -1,0 +1,18 @@
+Running "fixclosure:test" (fixclosure) task
+File: ../fixtures/ng.js
+
+Provided:
+- goog.dom
+
+Required:
+- goog.dom.DomHelper
+
+Missing Require:
+- goog.math.Size
+
+FIXED!
+
+0 files completed
+1 files fixed
+
+Done, without errors.

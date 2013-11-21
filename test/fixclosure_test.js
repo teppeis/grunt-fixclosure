@@ -34,12 +34,20 @@ describe('grunt fixclosure', function() {
   it('mixed', function(done) {
     testGruntfile('mixed', done);
   });
+
+  it('--fixclosure-fix-in-place', function(done) {
+    testGruntfile('option-fix', ['--fixclosure-fix-in-place'], done);
+  });
 });
 
-function testGruntfile(name, callback) {
+function testGruntfile(name, opt_options, callback) {
+  if (typeof opt_options === 'function') {
+    callback = opt_options;
+    opt_options = [];
+  }
   var prefix = __dirname + '/cases/' + name;
   var gruntfile = prefix + '.Gruntfile.js';
-  runGruntfile(gruntfile, function(err, stdout, stderr) {
+  runGruntfile(gruntfile, opt_options, function(err, stdout, stderr) {
     var expectedFile = prefix + (err ? '.ng.txt' : '.ok.txt');
     var expected;
     try {
@@ -63,8 +71,8 @@ function testGruntfile(name, callback) {
   });
 }
 
-function runGruntfile(gruntfile, callback) {
-  var cmd = ['grunt', '--no-color', '--gruntfile', gruntfile].join(' ');
-  var options = {};
-  exec(cmd, options, callback);
+function runGruntfile(gruntfile, options, callback) {
+  var cmd = ['grunt', '--no-color', '--gruntfile', gruntfile].concat(options);
+  console.log(cmd.join(' '));
+  exec(cmd.join(' '), {}, callback);
 }
