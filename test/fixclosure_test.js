@@ -73,6 +73,5 @@ function testGruntfile(name, opt_options, callback) {
 
 function runGruntfile(gruntfile, options, callback) {
   var cmd = ['grunt', '--no-color', '--gruntfile', gruntfile].concat(options);
-  console.log(cmd.join(' '));
   exec(cmd.join(' '), {}, callback);
 }
