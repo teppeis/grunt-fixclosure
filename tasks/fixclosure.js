@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       fixInPlace: false
     });
 
-    var args = ['node', 'fixclosure', '--no-success'];
+    var args = ['node', 'fixclosure'];
 
     var fixInPlace = grunt.option.flags().some(function(item) {
       return item === '--fixclosure-fix-in-place';
