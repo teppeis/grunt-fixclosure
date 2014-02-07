@@ -26,12 +26,8 @@ module.exports = function(grunt) {
       args.push('--fix-in-place');
     }
 
-    cli({
+    var proc = {
       argv: args.concat(this.filesSrc),
-      exit: function(code) {
-        // Fail
-        grunt.warn('fixclosure failed.');
-      },
       stdout: {
         write: function(msg) {
           grunt.log.write(msg);
@@ -41,7 +37,12 @@ module.exports = function(grunt) {
         write: function(msg) {
           grunt.log.write(msg);
         }
+      },
+      exit: function(code) {
+        // Fail
+        grunt.warn('fixclosure failed.');
       }
-    });
+    };
+    cli(proc.argv, proc.stdout, proc.stderr, proc.exit);
   });
 };
