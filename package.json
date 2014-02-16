@@ -37,6 +37,6 @@
     "test": "node_modules/grunt-cli/bin/grunt"
   },
   "dependencies": {
-    "fixclosure": "0.3.0-beta"
+    "fixclosure": "~1.0.0"
   }
 }
