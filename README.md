@@ -1,4 +1,4 @@
-# grunt-fixclosure [![Build Status](https://travis-ci.org/teppeis/grunt-fixclosure.png?branch=master)](https://travis-ci.org/teppeis/grunt-fixclosure)
+# grunt-fixclosure [![Build Status](https://travis-ci.org/teppeis/grunt-fixclosure.png?branch=master)](https://travis-ci.org/teppeis/grunt-fixclosure) [![Dependency Status](https://david-dm.org/teppeis/grunt-fixclosure.png)](https://david-dm.org/teppeis/grunt-fixclosure)
 
 > Grunt plugin for [fixclosure](https://github.com/teppeis/grunt-parallelize).
 
