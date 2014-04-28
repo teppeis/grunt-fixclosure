@@ -82,7 +82,7 @@ $ grunt fixclosure --fixclosure-fix-in-place
 
 ## Release History
 
- * 2014-04-28 [v1.1.0](https://github.com/teppeis/grunt-fixclosure/releases/tag/1.1.0) Update fixclosure-1.1.0.
+ * 2014-04-28 [v0.1.0](https://github.com/teppeis/grunt-fixclosure/releases/tag/0.1.0) Update fixclosure-1.1.0.
  * 2014-02-17 [v0.0.1](https://github.com/teppeis/grunt-fixclosure/releases/tag/0.0.1) Initial release with [fixclosure 1.0.0](https://github.com/teppeis/fixclosure/releases/tag/1.0.0) !
 
 ## License

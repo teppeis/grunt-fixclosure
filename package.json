@@ -1,6 +1,6 @@
 {
   "name": "grunt-fixclosure",
-  "version": "1.1.0",
+  "version": "0.1.0",
   "description": "Grunt plugin for fixclosure",
   "homepage": "https://github.com/teppeis/grunt-fixclosure",
   "bugs": "https://github.com/teppeis/grunt-fixclosure/issues",
