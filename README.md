@@ -82,6 +82,7 @@ $ grunt fixclosure --fixclosure-fix-in-place
 
 ## Release History
 
+ * 2016-03-16 [v0.3.1](https://github.com/teppeis/grunt-fixclosure/releases/tag/0.3.1) Cleanup, fix `main` in package.json and support for grunt@v1.0.0 [#11](https://github.com/teppeis/grunt-fixclosure/pull/11)
  * 2014-06-12 [v0.3.0](https://github.com/teppeis/grunt-fixclosure/releases/tag/0.3.0) Update fixclosure-1.3.0 and use caret `^1.3.0` instead of tilde `~1.3.0`.
  * 2014-05-02 [v0.2.0](https://github.com/teppeis/grunt-fixclosure/releases/tag/0.2.0) Update fixclosure-1.2.0.
  * 2014-04-28 [v0.1.0](https://github.com/teppeis/grunt-fixclosure/releases/tag/0.1.0) Update fixclosure-1.1.0.
