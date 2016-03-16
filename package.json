@@ -1,27 +1,21 @@
 {
   "name": "grunt-fixclosure",
-  "version": "0.3.0",
   "description": "Grunt plugin for fixclosure",
-  "homepage": "https://github.com/teppeis/grunt-fixclosure",
-  "bugs": "https://github.com/teppeis/grunt-fixclosure/issues",
+  "version": "0.3.0",
   "author": {
     "name": "Teppei Sato",
     "email": "teppeis@gmail.com"
   },
-  "keywords": [
-    "gruntplugin",
-    "fixclosure",
-    "closure"
-  ],
   "main": "./tasks/fixclosure.js",
   "files": [
     "tasks"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/teppeis/grunt-fixclosure"
+  "scripts": {
+    "test": "grunt"
   },
-  "license": "MIT",
+  "dependencies": {
+    "fixclosure": "^1.3.0"
+  },
   "devDependencies": {
     "cpr": "~0.2.0",
     "expect.js": "~0.3.1",
@@ -33,13 +27,19 @@
     "load-grunt-tasks": "~0.5.0",
     "mocha": "~1.20.1"
   },
-  "scripts": {
-    "test": "grunt"
-  },
-  "dependencies": {
-    "fixclosure": "^1.3.0"
-  },
   "peerDependencies": {
     "grunt": ">=0.4.0"
-  }
+  },
+  "homepage": "https://github.com/teppeis/grunt-fixclosure",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teppeis/grunt-fixclosure"
+  },
+  "bugs": "https://github.com/teppeis/grunt-fixclosure/issues",
+  "keywords": [
+    "closure",
+    "fixclosure",
+    "gruntplugin"
+  ],
+  "license": "MIT"
 }
