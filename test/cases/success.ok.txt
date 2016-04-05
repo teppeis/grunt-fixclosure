@@ -2,4 +2,4 @@ Running "fixclosure:test" (fixclosure) task
 
 1 files completed
 
-Done, without errors.
+Done.
