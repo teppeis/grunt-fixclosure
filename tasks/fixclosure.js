@@ -12,6 +12,7 @@ var cli = require('fixclosure').cli;
 
 module.exports = function(grunt) {
   grunt.registerMultiTask('fixclosure', 'fixclosure', function() {
+    /* eslint-disable no-invalid-this */
     var options = this.options({
       fixInPlace: false
     });
@@ -44,5 +45,6 @@ module.exports = function(grunt) {
       }
     };
     cli(proc.argv, proc.stdout, proc.stderr, proc.exit);
+    /* eslint-enable no-invalid-this */
   });
 };
