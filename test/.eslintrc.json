@@ -1,8 +1,6 @@
 {
-  "extends": "teppeis/node",
   "env": {
-    "mocha": true,
-    "node": true
+    "mocha": true
   },
   "rules": {
     "no-console": 1
