@@ -19,7 +19,7 @@
     "fixclosure": "^1.3.0"
   },
   "devDependencies": {
-    "cpr": "^1.1.0",
+    "cpr": "^2.0.1",
     "eslint": "^2.13.1",
     "eslint-config-teppeis": "^2.8.0",
     "grunt": "^1.0.0",
