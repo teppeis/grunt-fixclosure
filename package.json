@@ -21,7 +21,7 @@
   "devDependencies": {
     "cpr": "^1.1.0",
     "eslint": "^2.13.1",
-    "eslint-config-teppeis": "^2.8.0",
+    "eslint-config-teppeis": "^3.8.0",
     "grunt": "^1.0.0",
     "mocha": "^2.4.5"
   },
