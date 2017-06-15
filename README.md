@@ -1,5 +1,7 @@
 # grunt-fixclosure
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/teppeis/grunt-fixclosure.svg)](https://greenkeeper.io/)
+
 Grunt plugin for [fixclosure](https://github.com/teppeis/fixclosrue).
 
 [![NPM version][npm-image]][npm-url]
