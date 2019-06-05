@@ -1,41 +1,41 @@
 'use strict';
 
-var assert = require('assert');
-var path = require('path');
-var exec = require('child_process').exec;
-var fs = require('fs');
-var cpr = require('cpr');
+const assert = require('assert');
+const path = require('path');
+const {exec} = require('child_process');
+const fs = require('fs');
+const cpr = require('cpr');
 
-describe('grunt fixclosure', function() {
-  beforeEach(function(done) {
+describe('grunt fixclosure', () => {
+  beforeEach(done => {
     cpr(path.join(__dirname, 'fixtures'), path.join(__dirname, 'fixtures.copy'), {
-      deleteFirst: true
+      deleteFirst: true,
     }, done);
   });
 
-  afterEach(function(done) {
+  afterEach(done => {
     cpr(path.join(__dirname, 'fixtures.copy'), path.join(__dirname, 'fixtures'), {
-      deleteFirst: true
+      deleteFirst: true,
     }, done);
   });
 
-  it('success', function(done) {
+  it('success', done => {
     testGruntfile('success', done);
   });
 
-  it('fail', function(done) {
+  it('fail', done => {
     testGruntfile('fail', done);
   });
 
-  it('fixed', function(done) {
+  it('fixed', done => {
     testGruntfile('fixed', done);
   });
 
-  it('mixed', function(done) {
+  it('mixed', done => {
     testGruntfile('mixed', done);
   });
 
-  it('--fixclosure-fix-in-place', function(done) {
+  it('--fixclosure-fix-in-place', done => {
     testGruntfile('option-fix', ['--fixclosure-fix-in-place'], done);
   });
 });
@@ -45,17 +45,16 @@ function testGruntfile(name, opt_options, callback) {
     callback = opt_options;
     opt_options = [];
   }
-  var prefix = path.join(__dirname, 'cases', name);
-  var gruntfile = prefix + '.Gruntfile.js';
-  runGruntfile(gruntfile, opt_options, function(err, stdout, stderr) {
-    var expectedFile = prefix + (err ? '.ng.txt' : '.ok.txt');
-    var expected;
+  const prefix = path.join(__dirname, 'cases', name);
+  const gruntfile = `${prefix}.Gruntfile.js`;
+  runGruntfile(gruntfile, opt_options, (err, stdout, stderr) => {
+    const expectedFile = prefix + (err ? '.ng.txt' : '.ok.txt');
+    let expected;
     try {
-      // eslint-disable-next-line no-sync
       expected = fs.readFileSync(expectedFile, {encoding: 'utf8'});
     } catch (e) {
       // ng is unexpected.
-      console.log('stdout: ' + stdout);
+      console.log(`stdout: ${stdout}`);
       callback(err || stderr || stdout || true);
       return;
     }
@@ -73,6 +72,6 @@ function testGruntfile(name, opt_options, callback) {
 }
 
 function runGruntfile(gruntfile, options, callback) {
-  var cmd = ['grunt', '--no-color', '--gruntfile', gruntfile].concat(options);
+  const cmd = ['grunt', '--no-color', '--gruntfile', gruntfile].concat(options);
   exec(cmd.join(' '), {}, callback);
 }
