@@ -1,7 +1,7 @@
 {
   "name": "grunt-fixclosure",
   "description": "Grunt plugin for fixclosure",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": {
     "name": "Teppei Sato",
     "email": "teppeis@gmail.com"
