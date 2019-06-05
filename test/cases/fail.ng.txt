@@ -12,7 +12,9 @@ Missing Require:
 
 FAIL!
 
-1 of 1 files failed
+Total: 1 files
+Passed: 0 files
+Failed: 1 files
 Warning: fixclosure failed. Use --force to continue.
 
 Aborted due to warnings.

@@ -16,7 +16,7 @@
     "test:unit": "mocha test"
   },
   "dependencies": {
-    "fixclosure": "^1.3.0"
+    "fixclosure": "^2.1.0"
   },
   "devDependencies": {
     "cpr": "^3.0.1",

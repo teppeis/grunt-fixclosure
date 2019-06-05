@@ -42,7 +42,9 @@ module.exports = function(grunt) {
         grunt.warn('fixclosure failed.');
       },
     };
-    cli(proc.argv, proc.stdout, proc.stderr, proc.exit);
+
+    const done = this.async();
+    cli(proc.argv, proc.stdout, proc.stderr, proc.exit).then(done);
     /* eslint-enable no-invalid-this */
   });
 };
