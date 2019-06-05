@@ -8,41 +8,39 @@
 
 'use strict';
 
-var cli = require('fixclosure').cli;
+const {cli} = require('fixclosure');
 
 module.exports = function(grunt) {
   grunt.registerMultiTask('fixclosure', 'fixclosure', function() {
     /* eslint-disable no-invalid-this */
-    var options = this.options({
-      fixInPlace: false
+    const options = this.options({
+      fixInPlace: false,
     });
 
-    var args = ['node', 'fixclosure'];
+    const args = ['node', 'fixclosure'];
 
-    var fixInPlace = grunt.option.flags().some(function(item) {
-      return item === '--fixclosure-fix-in-place';
-    });
+    const fixInPlace = grunt.option.flags().some(item => item === '--fixclosure-fix-in-place');
 
     if (fixInPlace || options.fixInPlace) {
       args.push('--fix-in-place');
     }
 
-    var proc = {
+    const proc = {
       argv: args.concat(this.filesSrc),
       stdout: {
-        write: function(msg) {
+        write(msg) {
           grunt.log.write(msg);
-        }
+        },
       },
       stderr: {
-        write: function(msg) {
+        write(msg) {
           grunt.log.write(msg);
-        }
+        },
       },
-      exit: function(code) {
+      exit(code) {
         // Fail
         grunt.warn('fixclosure failed.');
-      }
+      },
     };
     cli(proc.argv, proc.stdout, proc.stderr, proc.exit);
     /* eslint-enable no-invalid-this */
