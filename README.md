@@ -1,6 +1,6 @@
 # grunt-fixclosure
 
-Grunt plugin for [fixclosure](https://github.com/teppeis/fixclosrue).
+Grunt plugin for [fixclosure](https://github.com/teppeis/fixclosure).
 
 [![NPM version][npm-image]][npm-url]
 ![Node.js version support][node-version]
