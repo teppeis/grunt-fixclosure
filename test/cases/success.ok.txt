@@ -1,5 +1,6 @@
 Running "fixclosure:test" (fixclosure) task
 
-1 files completed
+Total: 1 files
+Passed: 1 files
 
 Done.

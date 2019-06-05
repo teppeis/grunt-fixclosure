@@ -12,7 +12,8 @@ Missing Require:
 
 FIXED!
 
-0 files completed
-1 files fixed
+Total: 1 files
+Passed: 0 files
+Fixed: 1 files
 
 Done.
