@@ -104,5 +104,5 @@ Copyright (c) 2016 Teppei Sato &lt;teppeis@gmail.com&gt;. Licensed under the MIT
 [travis-url]: https://travis-ci.org/teppeis/grunt-fixclosure
 [deps-image]: https://david-dm.org/teppeis/grunt-fixclosure.svg
 [deps-url]: https://david-dm.org/teppeis/grunt-fixclosure
-[node-version]: https://img.shields.io/badge/Node.js%20support-v0.10–v5-brightgreen.svg
+[node-version]: https://img.shields.io/badge/Node.js%20support-v10+-brightgreen.svg
 [license]: https://img.shields.io/npm/l/grunt-fixclosure.svg
