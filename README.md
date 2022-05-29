@@ -4,8 +4,7 @@ Grunt plugin for [fixclosure](https://github.com/teppeis/fixclosure).
 
 [![NPM version][npm-image]][npm-url]
 ![Node.js version support][node-version]
-[![build status][travis-image]][travis-url]
-[![Dependency Status][deps-image]][deps-url]
+[![Build Status][ci-image]][ci-url]
 ![MIT License][license]
 
 ## Getting Started
@@ -15,7 +14,7 @@ This plugin requires Grunt `>=0.4.0`
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-fixclosure --save-dev
+npm install -D grunt-fixclosure fixclosure
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
@@ -104,11 +103,11 @@ $ grunt fixclosure --fixclosure-fix-in-place
 
 Copyright (c) 2016 Teppei Sato &lt;teppeis@gmail.com&gt;. Licensed under the MIT license.
 
-[npm-image]: https://img.shields.io/npm/v/grunt-fixclosure.svg
+[npm-image]: https://badgen.net/npm/v/grunt-fixclosure?icon=npm&label=
 [npm-url]: https://npmjs.org/package/grunt-fixclosure
-[travis-image]: https://travis-ci.org/teppeis/grunt-fixclosure.svg?branch=master
-[travis-url]: https://travis-ci.org/teppeis/grunt-fixclosure
-[deps-image]: https://david-dm.org/teppeis/grunt-fixclosure.svg
+[ci-image]: https://github.com/teppeis/grunt-fixclosure/workflows/ci/badge.svg
+[ci-url]: https://github.com/teppeis/grunt-fixclosure/actions?query=workflow%3A%22ci%22
+[deps-image]: https://badgen.net/david/dep/teppeis/grunt-fixclosure
 [deps-url]: https://david-dm.org/teppeis/grunt-fixclosure
-[node-version]: https://img.shields.io/badge/Node.js%20support-v10+-brightgreen.svg
-[license]: https://img.shields.io/npm/l/grunt-fixclosure.svg
+[node-version]: https://badgen.net/npm/node/grunt-fixclosure
+[license]: https://badgen.net/npm/license/grunt-fixclosure
