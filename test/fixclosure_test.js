@@ -52,7 +52,7 @@ function testGruntfile(name, opt_options, callback) {
     let expected;
     try {
       expected = fs.readFileSync(expectedFile, {encoding: 'utf8'});
-    } catch (e) {
+    } catch {
       // ng is unexpected.
       console.log(`stdout: ${stdout}`);
       callback(err || stderr || stdout || true);

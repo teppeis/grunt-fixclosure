@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 
     const args = ['node', 'fixclosure'];
 
-    const fixInPlace = grunt.option.flags().some(item => item === '--fixclosure-fix-in-place');
+    const fixInPlace = grunt.option.flags().includes('--fixclosure-fix-in-place');
 
     if (fixInPlace || options.fixInPlace) {
       args.push('--fix-in-place');
