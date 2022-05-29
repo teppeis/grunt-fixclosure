@@ -6,23 +6,25 @@
  * Licensed under the MIT license.
  */
 
-'use strict';
+"use strict";
 
-const {cli} = require('fixclosure');
+const { cli } = require("fixclosure");
 
-module.exports = function(grunt) {
-  grunt.registerMultiTask('fixclosure', 'fixclosure', function() {
+module.exports = function (grunt) {
+  grunt.registerMultiTask("fixclosure", "fixclosure", function () {
     /* eslint-disable no-invalid-this */
     const options = this.options({
       fixInPlace: false,
     });
 
-    const args = ['node', 'fixclosure'];
+    const args = ["node", "fixclosure"];
 
-    const fixInPlace = grunt.option.flags().some(item => item === '--fixclosure-fix-in-place');
+    const fixInPlace = grunt.option
+      .flags()
+      .includes("--fixclosure-fix-in-place");
 
     if (fixInPlace || options.fixInPlace) {
-      args.push('--fix-in-place');
+      args.push("--fix-in-place");
     }
 
     const proc = {
@@ -39,7 +41,7 @@ module.exports = function(grunt) {
       },
       exit(code) {
         // Fail
-        grunt.warn('fixclosure failed.');
+        grunt.warn("fixclosure failed.");
       },
     };
 
