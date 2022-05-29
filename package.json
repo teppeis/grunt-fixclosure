@@ -2,6 +2,9 @@
   "name": "grunt-fixclosure",
   "description": "Grunt plugin for fixclosure",
   "version": "2.0.0",
+  "engines": {
+    "node": ">=14"
+  },
   "author": {
     "name": "Teppei Sato",
     "email": "teppeis@gmail.com"
