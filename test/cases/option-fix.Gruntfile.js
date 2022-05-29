@@ -1,18 +1,17 @@
-'use strict';
+"use strict";
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.initConfig({
     fixclosure: {
       test: {
-        src: '../fixtures/ng.js',
-        options: {
-        }
-      }
-    }
+        src: "../fixtures/ng.js",
+        options: {},
+      },
+    },
   });
 
   // Load grunt-fixclosure
-  grunt.loadTasks('../../tasks');
+  grunt.loadTasks("../../tasks");
   // Set defaut task.
-  grunt.registerTask('default', ['fixclosure:test']);
+  grunt.registerTask("default", ["fixclosure:test"]);
 };
